@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/lorentz_factor_calculator"
+        android:textSize="28sp"/>
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TextView"
+        android:text="@string/please_enter_value_for_velocity"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TextView2"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="53dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/calculate_lorentz_factor"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="266dp" />
+    <TextView
+        android:id="@+id/Please_enter_Lorentz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button"
+        android:text="Please enter value for Lorentz Factor"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/input_lorentz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Please_enter_Lorentz"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="53dp" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_lorentz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="check lorentz factor"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="266dp" />
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"/>
+</RelativeLayout>
